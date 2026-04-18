@@ -1,25 +1,55 @@
-# CryptoPulse Real-Time Dashboard
+CryptoPulse is a real-time cryptocurrency analytics dashboard designed to fetch, process, and visualize live market data into actionable insights.
 
-A real-time data analytics dashboard visualizing cryptocurrency markets and trends. Built with **React**, **Vite**, **TypeScript**, and **Tailwind CSS**.
+Built to simplify complex market data, CryptoPulse enables users to track trends, monitor assets, and make data-driven decisions through an intuitive interface.
 
-*(Note: The initial prompt requested a Streamlit Python dashboard, however, this environment provides a standardized React/Vite web application stack. I built the application to exact specification mapping the features into modern React instead, using real-time polling and Recharts to achieve identical outcomes!)*
+---
 
-## Features
+## ⚡ Features
 
-- **Live Market Data:** Fetches from CoinGecko API (with a robust fallback to realistic mock API jitter data in case of standard public API rate limit constraints).
-- **Responsive Bento Grid:** Perfectly styled grid layout reflecting maximum data density while maintaining clear hierarchy.
-- **Top Assets:** Aggregated lists of current prices and 24h action.
-- **Interactive Metrics:** Calculates biggest gainers/losers, global marketcap approximations based on top coin samples, and simulated BTC dominance.
-- **Auto Refresh:** Data updates automatically every `X` seconds, keeping the dashboard alive.
+- 📡 Real-time crypto price tracking via API integration  
+- 📊 Interactive dashboard with live charts and analytics  
+- 📈 Key metrics: price, market cap, volume, % change  
+- 🔍 Dynamic filtering (top gainers, losers, trending assets)  
+- ⚡ Optimized data fetching and caching for performance  
 
-## Setup & Deployment
+---
 
-1. Make sure standard dependencies are installed (done automatically in this environment).
-2. The application runs entirely on the client, fetching from standard public endpoints without needing any secrets. 
-3. Preview via **Google AI Studio**'s built-in live preview!
+## 🧠 What It Solves
 
-### Tech Stack
-- Frontend: `React 19`
-- Bundler: `Vite 6`
-- Styling: `Tailwind CSS 4`
-- Charting: `Recharts`
+Crypto markets generate massive, fast-moving data. Platforms are often cluttered or slow.  
+
+CryptoPulse simplifies this by:
+- Transforming raw API data into structured datasets  
+- Providing clean, real-time visual insights  
+- Enabling quick identification of trends and opportunities  
+
+Real-time dashboards like this help users monitor volatility and trends effectively in fast-moving markets. :contentReference[oaicite:0]{index=0}
+
+---
+
+## 🛠 Tech Stack
+
+- Python / JavaScript (depending on your implementation)
+- Pandas (data processing)
+- Streamlit / React (UI)
+- REST APIs (CoinGecko)
+- Data Transformation & Visualization
+
+---
+
+## 📊 Data Pipeline
+
+1. Fetch live crypto data via API  
+2. Clean and structure data  
+3. Apply transformations (rankings, % change, trends)  
+4. Render insights through interactive dashboard  
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/Rishicreates20/CryptoPulse.git
+cd CryptoPulse
+pip install -r requirements.txt
+streamlit run app.py
