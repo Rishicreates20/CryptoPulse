@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bento-bg: #0A0A0C;
+  --color-bento-surface: #141417;
+  --color-bento-border: #26262B;
+  --color-bento-text: #FFFFFF;
+  --color-bento-text-sec: #8E9196;
+  --color-bento-accent: #3D5AFE;
+  --color-bento-success: #00E676;
+  --color-bento-danger: #FF1744;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
